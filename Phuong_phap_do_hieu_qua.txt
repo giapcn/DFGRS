@@ -1,0 +1,12 @@
+Input: Rating_matrix, Predicted_Items, Vector_top_N (1-10)
+output: matrix contain needed metrics for each value of top N
+1. Tính giá trị cho toàn bộ các items bằng 1 phương pháp aggregate được chọn -> lưu vào 1 vector.
+2. Với mỗi giá trị trong top-N
+	a. Tìm tập hợp các items được chọn.
+	b. tính các giá trị metric cần đo.
+		- Error metric
+		- Fairness 1
+		- Fairness 2
+		- Adjusted-fairness
+	c. Add vào kết quả
+3. Lưu file kết quả cho phương pháp aggregation
